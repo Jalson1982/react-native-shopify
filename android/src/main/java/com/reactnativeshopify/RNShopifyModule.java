@@ -35,7 +35,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class ShopifyModule extends ReactContextBaseJavaModule {
+public class RNShopifyModule extends ReactContextBaseJavaModule {
 
     private GraphClient client;
     private Storefront.MailingAddressInput mailingAddressInput;
@@ -45,13 +45,13 @@ public class ShopifyModule extends ReactContextBaseJavaModule {
     private String cardVaultUrl;
     private static final Gson gson = new Gson();
 
-    public ShopifyModule(ReactApplicationContext reactContext) {
+    public RNShopifyModule(ReactApplicationContext reactContext) {
         super(reactContext);
     }
 
     @Override
     public String getName() {
-        return "MBBridge";
+        return "RNShopify";
     }
 
     // TODO: replace Callback with Promise
